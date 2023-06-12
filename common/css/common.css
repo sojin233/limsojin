@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+*{box-sizing: border-box;}
+body { -webkit-user-select:none; -moz-user-select:none; -ms-user-select:none; user-select:none}/* 드래그 방지 */
+body {margin-bottom: 0px; font-family:'Noto Sans KR';}
+.wrap { margin: 0 auto;}
+
+.modal-open .wrap {display: none;}
+
+
+/* 스크롤 */
+::-webkit-scrollbar-button{background-color:#fff;} 
+::-webkit-scrollbar-track {background: #fff; }
+::-webkit-scrollbar-thumb { height: 0%; background: #fff; border-radius: 10px;}
+::-webkit-scrollbar {width: 0px; height: 0px;}
+
+
+/* icon */
+.icon_up_down { display: inline-block; background-image: url(../img/up_down.png); width: 14px;height: 8px;  background-repeat: no-repeat; background-size: 30px auto; position: absolute; top: 0px; left: 0px;background-position: -16px 0px;}
+
+
+
+
+/* button type */
+
+
+
+/* input type */
+
+
+/* select type */
+
+
+
+/* checked 버튼 */
+
+
+
+/* 달력 input */
+
+
+
+
+

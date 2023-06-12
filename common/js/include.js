@@ -26,4 +26,6 @@ function includeHTML() {
   }
 };
 
-includeHTML();
+window.addEventListener('DOMContentLoaded',()=>{
+    includeHTML();
+});

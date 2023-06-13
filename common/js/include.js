@@ -1,4 +1,7 @@
- window.addEventListener('load', function() {
+ 
+console.log("111");
+
+window.addEventListener('load', function () {
             var allElements = document.getElementsByTagName('*');
             Array.prototype.forEach.call(allElements, function(el) {
                 var includePath = el.dataset.includePath;

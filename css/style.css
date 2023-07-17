@@ -1,5 +1,66 @@
-@charset "UTF-8";
-
 header {
   border: 1px solid red;
+  margin-top: 30px;
 }
+
+nav {
+  position: fixed;
+  top: 20px;
+  max-width: 1350px;
+  width: 100%;
+  padding: 10px 20px;
+}
+nav .nav_btns {
+  display: flex;
+  justify-content: flex-end;
+}
+nav .dropdown_menu {
+  display: none;
+}
+nav.active {
+  background-color: whitesmoke;
+  border-radius: 20px;
+}
+nav.active .nav_btns .menu_btn .icon_menu {
+  background-image: url(../img/icon/icon_menu02.png);
+  background-position: 7px 14px;
+}
+nav.active .dropdown_menu {
+  display: block;
+}
+nav.active .dropdown_menu ul {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+nav.active .dropdown_menu ul li {
+  width: 180px;
+  text-align: center;
+  position: relative;
+}
+nav.active .dropdown_menu ul li::after {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 13px;
+  background-color: #000;
+  position: absolute;
+  right: 0;
+  top: 7px;
+}
+nav.active .dropdown_menu ul li:last-child::after {
+  display: none;
+}
+nav.active .dropdown_menu ul li a {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 300;
+  color: #000;
+}
+
+footer {
+  border: 1px solid red;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}/*# sourceMappingURL=style.css.map */

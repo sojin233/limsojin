@@ -1,29 +1,25 @@
-@charset "UTF-8";
 * {
   box-sizing: border-box;
 }
-
 body {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
-  user-select: none;
+  user-select: none
 }
-
 /* 드래그 방지 */
 body {
   margin-bottom: 0px;
-  font-family: "Noto Sans KR";
+  font-family: 'Noto Sans KR';
 }
-
 .wrap {
   max-width: 1350px;
   margin: 0 auto;
 }
-
 .modal-open .wrap {
   display: none;
 }
+
 
 /* icon */
 .icon_arrow_r {
@@ -32,18 +28,17 @@ body {
   height: 22px;
   background: #1D1F21;
   border-radius: 50%;
+  &::after {
+    content: '';
+    width: 22px;
+    height:22px;
+    display: inline-block;
+    background-image: url(../img/icon/icon_right_arrow.png);
+    background-repeat: no-repeat;
+    background-size: 15px auto;
+    background-position: 4px 7px;
+  }
 }
-.icon_arrow_r::after {
-  content: "";
-  width: 22px;
-  height: 22px;
-  display: inline-block;
-  background-image: url(../img/icon/icon_right_arrow.png);
-  background-repeat: no-repeat;
-  background-size: 15px auto;
-  background-position: 4px 7px;
-}
-
 .icon_menu {
   width: 30px;
   height: 30px;
@@ -54,6 +49,7 @@ body {
   background-position: 7px 9px;
 }
 
+
 /* button type */
 .lg_btn {
   background-color: #E7E7E7;
@@ -63,16 +59,15 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  span {
+    font-size: 15px;
+    line-height: 15px;
+    color: #000;
+    font-weight: 300;
+    display: inline-block;
+    margin-right: 5px;
+  }
 }
-.lg_btn span {
-  font-size: 15px;
-  line-height: 15px;
-  color: #000;
-  font-weight: 300;
-  display: inline-block;
-  margin-right: 5px;
-}
-
 .menu_btn {
   width: 30px;
   height: 30px;
@@ -80,9 +75,22 @@ body {
   border-radius: 50%;
 }
 
+
 /* input type */
+
+
 /* select type */
+
+
+
 /* checked 버튼 */
+
+
+
+
+
+
+
 /* common */
 .w_0_1 {
   width: 100%;
@@ -943,4 +951,4 @@ body {
 
 .w100p {
   width: 100% !important;
-}/*# sourceMappingURL=common.css.map */
+}

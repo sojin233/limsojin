@@ -1,5 +1,4 @@
 header {
-  border: 1px solid red;
   margin-top: 30px;
 }
 
@@ -18,12 +17,16 @@ nav .dropdown_menu {
   display: none;
 }
 nav.active {
-  background-color: whitesmoke;
+  background-color: #f8f8f8;
   border-radius: 20px;
+  animation: fadeInDown 1s;
 }
 nav.active .nav_btns .menu_btn .icon_menu {
   background-image: url(../img/icon/icon_menu02.png);
   background-position: 7px 14px;
+}
+nav.active .nav_btns .select_box {
+  display: none;
 }
 nav.active .dropdown_menu {
   display: block;
@@ -63,4 +66,15 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translateZ(0);
+  }
 }/*# sourceMappingURL=style.css.map */

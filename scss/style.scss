@@ -1,5 +1,4 @@
 header {
-  border: 1px solid red;
   margin-top: 30px;
 }
 
@@ -17,14 +16,18 @@ nav {
     display: none;
   }
   &.active {
-    background-color: whitesmoke;
+    background-color: #f8f8f8;
     border-radius: 20px;
+    animation: fadeInDown 1s;
     .nav_btns {
       .menu_btn {
         .icon_menu {
           background-image: url(../img/icon/icon_menu02.png);
           background-position: 7px 14px;
         }
+      }
+      .select_box {
+        display: none;
       }
     }
     .dropdown_menu {
@@ -70,3 +73,18 @@ footer {
   bottom: 0;
   width: 100%;
 }
+
+
+// transition
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translateZ(0);
+  }
+}
+
+

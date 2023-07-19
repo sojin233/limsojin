@@ -73,6 +73,11 @@ body {
   height: 30px;
   background-color: #E7E7E7;
   border-radius: 50%;
+  transition: all 1.0s;
+  &:hover {
+    transform: scale(1.15);
+    transition: all 300ms ease-in;
+  }
 }
 
 
@@ -88,6 +93,11 @@ body {
   background-color: #E7E7E7;
   border-radius: 40px;
   cursor: pointer;
+  transition: all 1.0s;
+  &:hover {
+    transform: scale(1.05);
+    transition: all 300ms ease-in;
+  }
   
   .label {
     display: flex;

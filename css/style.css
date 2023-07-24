@@ -1,13 +1,16 @@
 header {
   margin-top: 30px;
+  height: 30px;
 }
 
 nav {
   position: fixed;
   top: 20px;
-  max-width: 1350px;
   width: 100%;
   padding: 10px 20px;
+}
+nav .wrap {
+  padding-right: 20px;
 }
 nav .nav_btns {
   display: flex;
@@ -17,6 +20,7 @@ nav .dropdown_menu {
   display: none;
 }
 nav.active {
+  z-index: 999;
   background-color: #f8f8f8;
   border-radius: 20px;
   animation: fadeInDown 1s;
@@ -59,6 +63,57 @@ nav.active .dropdown_menu ul li a {
   font-size: 16px;
   font-weight: 300;
   color: #000;
+}
+
+#section_02 {
+  border: 1px solid darkblue;
+  padding: 100px 0px;
+}
+#section_02 .section_wrap {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+#section_02 .section_wrap .img_box {
+  padding: 0px 50px 0px 80px;
+  position: relative;
+}
+#section_02 .section_wrap .img_box .img {
+  display: flex;
+  justify-content: end;
+}
+#section_02 .section_wrap .img_box .img img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+}
+#section_02 .section_wrap .img_box .skill_wrap {
+  position: absolute;
+  bottom: 0;
+}
+#section_02 .section_wrap .img_box .skill_wrap p {
+  font-size: 16px;
+  line-height: 16px;
+  color: #000;
+  margin-bottom: 10px;
+}
+#section_02 .section_wrap .img_box .skill_wrap .skills {
+  display: flex;
+}
+#section_02 .section_wrap .img_box .skill_wrap .skills button {
+  margin-right: 15px;
+}
+#section_02 .section_wrap .img_box .skill_wrap .skills button:last-child {
+  margin-right: 0px;
+}
+#section_02 .section_wrap .text_box {
+  padding: 0px 80px 0px 50px;
+}
+#section_02 .section_wrap .text_box p {
+  font-size: 20px;
+  line-height: 28px;
+}
+#section_02 .section_wrap .text_box span {
+  display: inline-block;
 }
 
 footer {

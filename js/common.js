@@ -28,9 +28,8 @@ window.addEventListener('load', function () {
 		} else {
 			label.parentNode.classList.add('active');
 		}
-		var value = document.documentElement.lang;
-		console.log(value)
 	});
+
 	document.querySelector("body").addEventListener("click", function (e) {
 		if (e.target == e.currentTarget.querySelector('.label')) {
 			
@@ -39,6 +38,14 @@ window.addEventListener('load', function () {
 		}
 	});
 
+	document.querySelector("body").addEventListener("click", function(e){
+		const evTarget = e.target
+		console.log(evTarget.classList.contains(label))
+    // if(evTarget.classList.contains("modal")) {
+    //     modal.style.display = "none"
+    // }
+	});
+ 
 
 
 

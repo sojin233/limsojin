@@ -2,6 +2,7 @@
   box-sizing: border-box;
 }
 body {
+  font-size: 16px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -18,6 +19,21 @@ body {
 }
 .modal-open .wrap {
   display: none;
+}
+
+
+// 스크롤
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  border: none;
+  box-shadow: 0;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #787878;
+  border-radius: 40px;
 }
 
 
@@ -85,18 +101,20 @@ body {
 }
 
 .button_type_02 {
-  display: flex;
-  align-items: center;
   height: 24px;
   background-color: #fff;
   border: 1px solid #CCCCCC;
   border-radius: 12px;
   padding: 0px 15px;
+  white-space: nowrap;
   span {
     display: inline-block;
+    font-weight: 300;
     font-size: 14px;
     line-height: 14px;
     color: #000;
+    vertical-align: top;
+    margin-top: 4px;
   }
 }
 
@@ -197,6 +215,34 @@ body {
 
 
 
+// content_type_01
+.content_type_01 {
+  .img_wrap {
+    width: 100%;
+    height: 350px;
+    img {
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+      border: 1px solid #707070;
+      border-radius: 20px;
+      background: #fff;
+    }
+  }
+  .txt_wrap {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    p {
+      font-size: 1.375rem;
+      line-height: 24px;
+      color: #000;
+    }
+  }
+}
+
+
+
 
 
 
@@ -272,6 +318,10 @@ body {
 
 .mgT60 {
   margin-top: 60px;
+}
+
+.mgT70 {
+  margin-top: 70px;
 }
 
 .mgT80 {

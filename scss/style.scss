@@ -61,7 +61,7 @@ nav {
           }
           a {
             display: inline-block;
-            font-size: 16px;
+            font-size: 1rem;
             font-weight: 300;
             color: #000;
           }
@@ -72,7 +72,6 @@ nav {
 }
 
 #section_02 {
-  border: 1px solid darkblue;
   padding: 100px 0px;
   .section_wrap {
     display: grid;
@@ -88,16 +87,18 @@ nav {
           width: 140px;
           height: 140px;
           border-radius: 50%;
+          border: 1px solid #000;
         }
       }
       .skill_wrap {
         position: absolute;
         bottom: 0;
         p {
-          font-size: 16px;
+          font-size: 1rem;
           line-height: 16px;
           color: #000;
           margin-bottom: 10px;
+          font-weight: 300;
         }
         .skills {
           display: flex;
@@ -113,13 +114,49 @@ nav {
     .text_box {
       padding: 0px 80px 0px 50px;
       p {
-        font-size: 20px;
+        font-size: 1.25rem;
         line-height: 28px;
       }
-      span {
+      .tit {
         display: inline-block;
+        font-size: 1.125rem;
+        line-height: 25px;
+        font-weight: 300;
       }
     }
+  }
+}
+
+#section_03 {
+  background-color: #F8F8F8;
+  padding: 100px 0px 120px 0px;
+  .tit_wrap {
+    width: 50%;
+    margin-left: 50%;
+    padding: 0px 80px;
+    h5 {
+      font-size: 3rem;
+      color: #000;
+      line-height: 50px;
+      font-weight: 500;
+    }
+    p {
+      font-size: 1.125rem;
+      line-height: 25px;
+      font-weight: 300;
+    }
+  }
+  .content_wrap {
+    padding: 0px 80px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 70px;
+    column-gap: 50px;
+  }
+  .btn_wrap {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
   }
 }
 
@@ -127,10 +164,9 @@ nav {
 
 
 
+
 footer {
   border: 1px solid red;
-  position: fixed;
-  bottom: 0;
   width: 100%;
 }
 
